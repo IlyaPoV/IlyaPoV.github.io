@@ -1,0 +1,21 @@
+@font-face {
+	font-family:Gilroy;
+	src:url(gilroyextrabold.woff);
+
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family:Gilroy;
+	src:url(gilroylight.woff);
+
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family:OpenSans;
+	src:url(opensanslight.woff);
+
+	font-weight: normal;
+	font-style: normal;
+}
