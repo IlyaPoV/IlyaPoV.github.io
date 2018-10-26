@@ -99,7 +99,7 @@ img{
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
-	background-color: #242424;
+	background: linear-gradient(to top, #fff 5%, #242424 5%);
 }
 
 .user-navigation .login-link {
