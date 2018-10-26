@@ -9,8 +9,9 @@ body {
 	margin-bottom: -10px;
 }
 
+
 .container{
-	width: 90%;
+	width: 1140px;
 	margin: 0 auto;
 }
 
@@ -20,8 +21,7 @@ header {
 
 .header-container{
 	display: flex;
-	width: 90%;
-	margin: 0 auto;
+
 	justify-content: space-between;
 
 }
@@ -306,6 +306,11 @@ header {
 .footer-right h4{
 	font-size: 28px;
 	text-transform: uppercase;
+}
+
+.iphone {
+	text-align: center;
+	font-size: 0;
 }
 
 @media screen and ( max-width: 760px) {
