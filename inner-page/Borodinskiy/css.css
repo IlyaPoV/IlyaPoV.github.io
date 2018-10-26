@@ -15,6 +15,14 @@ body {
 	background-repeat: no-repeat;
 }
 
+.catalog-body{
+	color: #000;
+	background-color: #fff;
+	background-image: url("img/pattern-light.jpg");
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
 a {
 	text-decoration: none;
 }
@@ -22,6 +30,10 @@ a {
 img{
 	width: 100%;
 	height: auto;
+}
+
+#menu-checkbox {
+	display: none;
 }
 
 .button{
@@ -56,6 +68,10 @@ img{
 	-ms-align-items: center;
 	align-items: center;
 
+}
+
+.main-navigation.catalog{
+	flex-direction: row;
 }
 
 .site-navigation,
@@ -176,6 +192,219 @@ img{
 	background-repeat: no-repeat, repeat;
 
 
+}
+
+.breadcrumbs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	color: #bfbdba;
+	margin-bottom: 55px;
+}
+
+.breadcrumbs a{
+	color: #000;
+	padding-right: 40px;
+	position: relative;
+}
+
+.breadcrumbs a:after{
+	content: "";
+
+	position: absolute;
+	top: 4px;
+	right: 15px;
+
+	width: 10px;
+	height: 10px;
+	background-color: #000;
+	transform: rotate(45deg);
+}
+
+.filters-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.filters-list li {
+	margin-bottom: 24px;
+	padding-left: 40px;
+	position: relative;
+}
+
+.filters-list label::before {
+	content: "";
+	text-align: center;
+
+	width: 16px;
+	height: 16px;
+
+
+	position: absolute;
+	left: 0;
+
+	border: 2px solid #000;
+}
+
+.filters-list input:checked + label::before {
+	content: "\2716";
+	text-align: center;	
+}
+
+
+.filters-list input[type="checkbox"],
+.filters-list-type input[type="radio"]{
+display: none;
+}
+
+.filters-list label {
+	font-size: 14px;
+	line-height: 18px;
+
+}
+
+.filters-column h3 {
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 30px;
+	margin-top: 0;
+}
+
+.filters-list-type {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+.filters-list-type li {
+	margin-bottom: 24px;
+	padding-left: 40px;
+	position: relative;
+
+}
+
+.filters-list-type label::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #000;
+	border-radius: 20px 20px;
+}
+
+.filters-list-type input:checked + label::before {
+	content: "";
+	
+	background: radial-gradient(at center, black 40%, transparent 40%);
+
+
+	padding: 0;
+	
+	text-align: center;	
+}
+
+
+.catalog-list {
+	list-style: none;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.catalog-item{
+	background-color: #fff;
+	width: 245px;
+	height: 310px;	
+	text-align: center;
+	margin-bottom: 20px;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.catalog-item h3 {
+	margin: 0;
+	padding: 0;
+
+	order: 1;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.catalog-item p{
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.catalog-item span {
+	display: inline-block;
+
+}
+
+ p.catalog-item-price {
+	order: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 15px;
+} 
+
+.catalog-item-price b {
+	display: inline-block;
+	background-color: #e5e5e5;
+	padding: 10px 30px;
+	
+}
+
+.wrapper {
+	display: flex;
+}
+
+.catalog-item img{
+	width: 220px;
+	height: 165px;
+}
+
+.catalog-item span {
+	color: #000;
+}
+
+.catalog-item-category{
+	text-transform: none;
+}
+
+.pagination-list {
+	list-style: none;
+	display: flex;
+}
+
+.pagination-item {
+	text-align: center;
+	vertical-align: middle;
+
+	margin-right: 5px;
+
+	background-color: #000;
+
+}
+
+.pagination-item a{
+	vertical-align: center;
+	color: #ffffff;
+	display: block;
+	padding: 10px 20px;
 }
 
 .index-columns h2 {
@@ -465,6 +694,9 @@ img{
 	padding: 0;
 }
 
+.site-navigation.inner-catalog{
+	width: auto;
+}
 
 .user-navigation {
 
@@ -531,4 +763,44 @@ img{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+}
+
+@media screen and (max-width: 760px) {
+	.features-item p {
+		font-size: 11px;
+	}
+	
+	.features-list{
+		flex-direction: column;
+	}
+
+	.site-navigation{
+		display: none;
+	}
+
+	.toggle-button {
+		text-align: center;
+		display: block;
+		cursor: pointer;
+		color: #000;
+		margin-top: 20px;
+		padding-left: 6px;
+		width: 100px;
+	}
+
+	.toggle-button:after {
+		content: attr(data-open);
+		display: block;
+		color: #fff;
+		margin-top: 30px;
+	}
+	#menu-checkbox:checked + site-navigarion .site-navigation {
+		display: block;
+	}
+	#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after{
+		content: attr(data-close);
+	}
+	.header-container a{
+		
+	}
 }
