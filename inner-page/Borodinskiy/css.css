@@ -636,6 +636,7 @@ display: none;
 .modal h2 {
 	font-size: 30px;
 	line-height: 42px;
+	padding-top: 15px;
 }
 
 .login-form input[type="text"],
@@ -728,6 +729,7 @@ display: none;
 	width: 1px;
 	height: 1px;
 	margin: -1px;
+	outline: none;
 }
 
 .index-columns {
@@ -763,6 +765,102 @@ display: none;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+}
+
+.modal-container {
+	width: 300px;
+	margin: 0 auto;
+	display: flex;
+
+	flex-direction: column;
+	justify-content: space-between;
+
+	position: relative;
+}
+
+.modal-login {
+ 	display: none; 
+
+	width: 460px;
+	height: 380px;
+	background-image: url("img/pattern-light.jpg");
+	background-position: 0 0;
+
+	position: fixed;
+	top: 20%;
+	right: 30%;
+	
+}
+
+.modal-login p{
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: 15px;
+}
+
+.login-icon-user {
+	width: 281px;
+	height: 39px;
+
+}
+
+.login-icon-password {
+	width: 281px;
+	height: 39px;
+
+}
+
+.modal-open{
+	display: block;
+}
+
+input[placeholder]{
+	padding-left: 15px;
+}
+
+.checkbox-indicator {
+	padding-left: 35px;
+	position: relative;
+}
+
+.checkbox-indicator::before {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #000;
+	left: 0;
+	margin-top: -2px;
+	
+}
+
+.restore {
+	float: right;
+}
+
+.form-menu input:checked + label::before{
+	content: "\2716";
+	font-size: 18px;
+	line-height: 16px;
+}
+
+.modal-close {
+	background-color: transparent;
+	position: absolute;
+	background-image: url("img/modal-close.png");
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 25px;
+	top: 10px;
+	right: -40%;
+	border: none;
+	color: #fff;
+}
+
+.modal-close:active {
+	outline: none;
 }
 
 @media screen and (max-width: 760px) {

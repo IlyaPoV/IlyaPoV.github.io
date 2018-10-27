@@ -167,16 +167,39 @@
 	 	</div>				
 	 	</div>
 	 </footer>
-	 <section class="modal modal-login">
-	 	<h2>Личный кабинет</h2>
-	 	<p>Введите свой логин и пароль.</p>
-	 	<!--form-->
-	 	<span class="modal-close">X</span>
-	 </section>
-	 <section class="modal modal-map">
+		 <section class="modal modal-login">
+	 	<div class="modal-container">
+		<h2>Личный кабинет</h2>
+		<p>Введите свой логин и пароль.</p>
+		<form class="login-form" action="" method="post">
+			<p>
+				<label for="user-login" class="visually-hidden">Логин</label>
+				<input id="user-login" class="login-icon-user" type="text" name="login" placeholder="Логин">
+			</p>
+			<p>
+				<label for="user-password" class="visually-hidden">Пароль</label>
+				<input id="user-password" class="login-icon-password" type="password" name="password" placeholder="Пароль">
+			</p>
+			<p class="form-menu">
+				<input type="checkbox" name="remember" class="visually-hidden" id="remember">
+				<label for="remember" class="checkbox-indicator">Запомните меня</label>
+				<a href="#" class="restore">Я забыл пароль!</a>
+			</p>
+			<button class="button" type="submit">Войти</button>
+		</form>
+		
+		<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+	</div>
+	</section>
+	 <!-- <section class="modal modal-map">
 	 	<h2 class="visualy-hidden">Как добраться</h2>
 	 	<span class="modal-close">X</span>
 	 </section>	 	 	
-	 	 </section>
+	 	 </section> -->
+	 	 <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+ 	<script src="script.js"></script>
 </body>
 </html>
