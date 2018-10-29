@@ -938,7 +938,22 @@ input[placeholder]{
 	outline: none;
 }
 
-@media screen and (max-width: 760px) {
+.back {
+
+
+	background-color: #e3e3e3;
+
+	position: fixed;
+	top: 100px;
+	left: 20px;
+}
+
+.back a {
+	color: #000;
+	padding: 10px;
+}
+
+/* @media screen and (max-width: 760px) {
 	.features-item p {
 		font-size: 11px;
 	}
@@ -976,4 +991,4 @@ input[placeholder]{
 	.header-container a{
 		
 	}
-}
+} */
