@@ -863,7 +863,20 @@ header input::placeholder {
 	display: flex;
 }
 
+.back {
 
+
+	background-color: #e3e3e3;
+
+	position: fixed;
+	top: 100px;
+	left: 20px;
+}
+
+.back a {
+	color: #000;
+	padding: 10px;
+}
 
 .footer-social a{
 	color: #fff;
