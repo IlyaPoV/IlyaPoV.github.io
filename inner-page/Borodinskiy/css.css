@@ -276,6 +276,7 @@ display: none;
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 45px;
 
 }
 
@@ -405,6 +406,11 @@ display: none;
 	color: #ffffff;
 	display: block;
 	padding: 10px 20px;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus{
+	background-color: #663d15;
 }
 
 .index-columns h2 {
@@ -757,6 +763,75 @@ display: none;
 
 .appointment {
 	width: 300px;
+}
+
+.product-column {
+	display: flex;
+	justify-content: space-between;
+}
+
+.product-small-list {
+	display: flex;
+	justify-content: space-between;
+
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.product-photos {
+	width: 460px;
+}
+
+.product-info {
+
+
+	width: 385px;
+}
+
+.product-info-container {
+	margin-top: 35px;
+
+	min-height: 540px;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.product-text {
+	width: 385px;
+}
+
+.product-info-top {
+	display: flex;
+	justify-content: space-between;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+}
+
+.product-article {
+	color: #aeaeae;
+}
+
+.product-price {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 
+	
+}
+
+.product-price b {
+	display: inline-block;
+	background-color: #e5e5e5;
+	padding: 10px 30px
 }
 
 .main-footer .container{
