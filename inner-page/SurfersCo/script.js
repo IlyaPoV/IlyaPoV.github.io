@@ -1,4 +1,5 @@
-(function(){ var template = document.querySelector('#team-card__item').content.querySelector('.team-list__item');
+(function(){ 
+var template = document.querySelector('#team-card__item').content.querySelector('.team-list__item');
 var memberCardList = document.querySelector('.our-team__list');
 
 var memberBase = [
